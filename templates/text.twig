@@ -1,0 +1,8 @@
+
+{%  for event in events %}
+{{  event.startLocalTime|date('D jS M g:ia') }}
+{{ event.title | raw }}
+{{ event.ourURL  | raw}}
+
+
+{%  endfor %}

@@ -1,0 +1,7 @@
+
+{%  for event in events %}
+    <div style="padding: 0 0 10px 0">
+        <div style="color: #555;">{{  event.startLocalTime|date('D jS M g:ia') }}</div>
+        <div><a href="{{ event.ourURL }}">{{ event.title }}</a></div>
+    </div>
+{%  endfor %}
